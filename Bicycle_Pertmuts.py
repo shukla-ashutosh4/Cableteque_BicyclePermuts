@@ -278,22 +278,23 @@ if uploaded_file is not None:
 #     st.info("Upload a Bicycle.xlsx file to begin. Use the sample file in the sidebar if you need a template.")
 
 # ---------------------- Footer / teaching ----------------------
-st.markdown("---")
-with st.expander("How this works (short) "):
-    st.markdown(
-        """
-**Overview**
+# st.markdown("---")
 
-1. `ID` sheet: each column is a *designator*. Each row value under that column is a possible value for that designator. The app builds every combination by taking one value from each column.
-2. `GENERAL` sheet: row 1 values are applied to every bike.
-3. Other sheets: the **first column header** is the designator name. Rows map a designator value (first-col cell) to a set of fields (other columns) to apply to bikes that use that designator value.
+# with st.expander("How this works (short) "):
+#     st.markdown(
+#         """
+# **Overview**
 
-**ID building**: the app concatenates chosen designator values using the `ID separator` chosen in the sidebar. This improves readability (e.g. `CITY-R-26-16-Acera-FALSE-RED`).
+# 1. `ID` sheet: each column is a *designator*. Each row value under that column is a possible value for that designator. The app builds every combination by taking one value from each column.
+# 2. `GENERAL` sheet: row 1 values are applied to every bike.
+# 3. Other sheets: the **first column header** is the designator name. Rows map a designator value (first-col cell) to a set of fields (other columns) to apply to bikes that use that designator value.
 
-**Conflict resolution**: if multiple sheets specify the same field for a bike, use the `conflict resolution` option to choose whether designator order or sheet priority determines which value wins.
+# **ID building**: the app concatenates chosen designator values using the `ID separator` chosen in the sidebar. This improves readability (e.g. `CITY-R-26-16-Acera-FALSE-RED`).
 
-"""
-    )
+# **Conflict resolution**: if multiple sheets specify the same field for a bike, use the `conflict resolution` option to choose whether designator order or sheet priority determines which value wins.
+
+# """
+#     )
 
 # with st.expander("Teach me more — deep dive"):
 #     st.markdown(
