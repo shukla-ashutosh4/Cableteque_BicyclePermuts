@@ -279,7 +279,7 @@ if uploaded_file is not None:
 
 # ---------------------- Footer / teaching ----------------------
 # st.markdown("---")
-
+    
 # with st.expander("How this works (short) "):
 #     st.markdown(
 #         """
