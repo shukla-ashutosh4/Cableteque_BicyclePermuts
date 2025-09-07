@@ -96,15 +96,7 @@ I am eager to work with Cableteque, learn from the team’s wealth of experience
 * The generator builds the Cartesian product using `itertools.product`.
 * General fields are applied first, and then per-designator sheets are applied in a deterministic order. The Streamlit UI lets you choose which precedence strategy to use.
 * The Streamlit app includes accessibility checks (contrast ratio) and a set of curated theme presets to avoid poor color combinations.
-* If the number of permutations grows very large, the app will still work but may become slow or heavy on memory — consider reducing the number of values per designator or adding server-side limits for deployment.
-
----
-
-## A note of thanks
-
-Special thanks to **Yuval** for support and helpful feedback during development — your insights were very valuable.
-
-A huge thank-you to **Cableteque** for inspiration and for championing practical, industry-first software for cable and wire-harness professionals. Cableteque’s dedication to building software "by wire harness people for wire harness people" and its culture of innovation, inclusivity and practical engineering inspired parts of the UX and the product-first approach used here. Learn more about Cableteque at: [https://cableteque.com/about](https://cableteque.com/about)
+* If the number of permutations grows very large, the app will still work but may become slow or heavy on memory, consider reducing the number of values per designator or adding serverside limits for deployment.
 
 ---
 
@@ -112,17 +104,17 @@ A huge thank-you to **Cableteque** for inspiration and for championing practical
 
 Cableteque champions deep domain knowledge, practical innovation, and building tools that genuinely help engineers and manufacturing teams work better. I strongly identify with these priorities, and my personal values and working style map closely to Cableteque’s PIA framework and broader mission:
 
-* **Pioneering (P)** — I embrace innovation and forward-thinking approaches. I enjoy exploring new ideas, automating repetitive tasks, and pushing boundaries to make workflows simpler and more powerful.
+* **Pioneering (P)** - I embrace innovation and forward-thinking approaches. I enjoy exploring new ideas, automating repetitive tasks, and pushing boundaries to make workflows simpler and more powerful.
 
-* **Insightful (I)** — I am committed to continuous learning. I actively seek new perspectives, study domain-specific practices (such as product configuration and inventory workflows), and apply lessons learned to improve both technical solutions and user experiences.
+* **Insightful (I)** - I am committed to continuous learning. I actively seek new perspectives, study domain-specific practices (such as product configuration and inventory workflows), and apply lessons learned to improve both technical solutions and user experiences.
 
-* **Agile (A)** — I work iteratively and adapt to change. I favor practical, incremental improvements, rapid prototyping, and close feedback loops so that solutions remain simple, useful, and easy to adopt.
+* **Agile (A)** - I work iteratively and adapt to change. I favor practical, incremental improvements, rapid prototyping, and close feedback loops so that solutions remain simple, useful, and easy to adopt.
 
 Beyond the PIA framework, I also align with Cableteque’s broader cultural values:
 
 * **Inclusivity & collaboration:** I enjoy working with diverse teams, listening to domain experts, and incorporating their feedback into the product. I believe great solutions come from shared expertise.
 
-* **Sustainability & positive impact:** I aim to build tools that reduce wasteful manual work and enable teams to focus on higher-value tasks — a small sustainability win through smarter processes.
+* **Sustainability & positive impact:** I aim to build tools that reduce wasteful manual work and enable teams to focus on higher-value tasks.
 
 * **Trust & shared success:** I prioritize clear communication, reliable tooling, and thoughtful design so teams can depend on the software and succeed together.
 
@@ -130,37 +122,13 @@ In short, my mindset—centered on practical innovation, continuous learning, an
 
 ---
 
-## Our values & culture
-
-Our company thrives on innovation, inclusivity, and collaboration. We value individuality, sustainability, and making a positive impact—building trust and shared success every step of the way.
-
-### P — Pioneering
-
-We are innovative and forward-thinking, always striving to improve and push boundaries.
-
-### I — Insightful
-
-We continuously learn and grow, seeking new perspectives and knowledge to improve ourselves and the organization.
-
-### A — Agile
-
-We adapt to change and are flexible in our approach, always looking for ways to improve and innovate based on simplicity.
-
 ## Credits
 
 * Developed by: **Ashutosh Shukla** (project author)
-* Thanks to: **Yuval**, **Cableteque** (inspiration and domain focus).
 
----
-
-## License
-
-(Choose a license and add here — e.g., MIT)
 
 ---
 
 ## Contact
 
-* LinkedIn: **[https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/your-linkedin-profile)**
-
-> Replace the placeholder above with your actual LinkedIn URL.
+* LinkedIn: **[Ashutosh Shukla](https://www.linkedin.com/in/your-linkedin-profile)**
