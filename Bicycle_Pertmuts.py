@@ -155,7 +155,7 @@ st.sidebar.header("Options")
 id_separator = st.sidebar.text_input("ID separator", value="-")
 precedence = st.sidebar.selectbox("Conflict resolution (which source can override)", options=["designator_order", "sheet_priority"], index=0, format_func=lambda x: "Designator order (ID columns)" if x=="designator_order" else "Sheet priority (sheet order)")
 show_preview = st.sidebar.checkbox("Show preview table", value=True)
-preview_rows = st.sidebar.number_input("Preview rows", min_value=5, max_value=500, value=50, step=5)
+preview_rows = st.sidebar.number_input("Preview rows", min_value=5, max_value=10000, value=50, step=5)
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Theme colors**")
@@ -167,7 +167,7 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("Need a sample .xlsx that follows the format? Use the button below to download an example.")
 
 # Create a downloadable sample Excel crafted in memory
-if st.sidebar.button("Download example Bicycle.xlsx"):
+if st.sidebar.button("Bicycle.xlsx"):
     sample_buffer = io.BytesIO()
     # Build a tiny sample workbook with pandas
     id_df = pd.DataFrame({
