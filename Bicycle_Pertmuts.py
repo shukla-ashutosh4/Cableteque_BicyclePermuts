@@ -295,32 +295,32 @@ with st.expander("How this works (short) "):
 """
     )
 
-with st.expander("Teach me more — deep dive"):
-    st.markdown(
-        """
-**Implementation notes**
+# with st.expander("Teach me more — deep dive"):
+#     st.markdown(
+#         """
+# **Implementation notes**
 
-- We read the whole workbook into `sheets: Dict[str, DataFrame]` using `pandas.read_excel(..., sheet_name=None)`.
-- The generator function constructs `combos = itertools.product(*lists_of_values)` — that is the cartesian product of designator values.
-- For each combo, we build the ID string (`id_separator.join(parts)`) and copy GENERAL fields.
-- Then we apply additional fields from matching rows in designator sheets. The app allows two override strategies: *designator order* (apply fields in order of ID columns) or *sheet priority* (apply fields in the order the sheets were discovered).
+# - We read the whole workbook into `sheets: Dict[str, DataFrame]` using `pandas.read_excel(..., sheet_name=None)`.
+# - The generator function constructs `combos = itertools.product(*lists_of_values)` — that is the cartesian product of designator values.
+# - For each combo, we build the ID string (`id_separator.join(parts)`) and copy GENERAL fields.
+# - Then we apply additional fields from matching rows in designator sheets. The app allows two override strategies: *designator order* (apply fields in order of ID columns) or *sheet priority* (apply fields in the order the sheets were discovered).
 
-**Scalability**
-- Cartesian products can explode. In your file you produced 5508 permutations. Keep an eye on the number of values per designator — multiply them and that is how many permutations you'll get.
-- If users upload very large inputs, consider streaming processing or limiting allowed combinations.
+# **Scalability**
+# - Cartesian products can explode. In your file you produced 5508 permutations. Keep an eye on the number of values per designator — multiply them and that is how many permutations you'll get.
+# - If users upload very large inputs, consider streaming processing or limiting allowed combinations.
 
-**Security & privacy**
-- The app runs locally by default when you run `streamlit run`. Files are processed in memory and not uploaded anywhere unless you deploy the app to a public host.
-- If you deploy to a shared server, consider adding authentication and disk quotas, and be careful about storing uploaded files.
+# **Security & privacy**
+# - The app runs locally by default when you run `streamlit run`. Files are processed in memory and not uploaded anywhere unless you deploy the app to a public host.
+# - If you deploy to a shared server, consider adding authentication and disk quotas, and be careful about storing uploaded files.
 
-**Next steps / improvements**
-- Add validation UI to show missing/ malformed sheets before generation.
-- Add a dry-run mode that only lists the expected number of permutations (no field merging) for a quick sanity check.
-- Add templating for ID format (e.g., allowing fixed prefixes/suffixes, zero-padding numbers, etc.).
-- Expose logs and warnings about ambiguous or missing sheet mappings.
+# **Next steps / improvements**
+# - Add validation UI to show missing/ malformed sheets before generation.
+# - Add a dry-run mode that only lists the expected number of permutations (no field merging) for a quick sanity check.
+# - Add templating for ID format (e.g., allowing fixed prefixes/suffixes, zero-padding numbers, etc.).
+# - Expose logs and warnings about ambiguous or missing sheet mappings.
 
-"""
-    )
+# """
+#     )
 
 # st.markdown("_If you'd like, I can adapt this app to deploy on Streamlit Cloud or package it into a Docker container. I can also add unit tests and CI integration — tell me which you'd prefer!_")
 
