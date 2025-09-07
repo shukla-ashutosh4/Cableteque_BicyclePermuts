@@ -1,0 +1,6 @@
+streamlit>=1.20.0
+pandas>=1.5.3
+openpyxl>=3.0.10
+# Optional but useful for deployments/tests
+numpy>=1.24.0
+gunicorn>=20.1.0  # if you deploy behind gunicorn
