@@ -6,7 +6,7 @@ A small toolkit + Streamlit app that reads a compact Excel specification of bicy
 * `streamlit_bicycle_generator.py` — Streamlit app for uploading `.xlsx`, previewing, filtering and downloading results.
 * `requirements.txt` — environment dependencies.
 * Example Excel template: `Bicycle_example.xlsx` (downloadable from the app sidebar).
-## Tutorial **[Tutorial Video](https://drive.google.com/file/d/1SjSIk8ec_WKvUuggQ60oak9ITbCtlasC/view?usp=sharing))**
+##  **[Tutorial Video](https://drive.google.com/file/d/1SjSIk8ec_WKvUuggQ60oak9ITbCtlasC/view?usp=sharing)**
 
 
 ---
