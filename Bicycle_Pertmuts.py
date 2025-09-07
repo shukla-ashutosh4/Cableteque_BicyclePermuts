@@ -218,7 +218,7 @@ st.markdown("---")
 st.markdown("**Special thanks to the Cableteque team for inspiration and support.**")
 
 # Replace this with your LinkedIn profile URL
-LINKEDIN_URL = "https://www.linkedin.com/in/your-linkedin-profile"
+LINKEDIN_URL = "https://www.linkedin.com/in/ashutosh-shukla4"
 st.markdown(f"LinkedIn: {LINKEDIN_URL}")
 
 # End of file
