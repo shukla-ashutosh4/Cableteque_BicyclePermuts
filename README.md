@@ -118,7 +118,7 @@ Beyond the PIA framework, I also align with Cableteque’s broader cultural valu
 
 * **Trust & shared success:** I prioritize clear communication, reliable tooling, and thoughtful design so teams can depend on the software and succeed together.
 
-In short, my mindset—centered on practical innovation, continuous learning, and collaborative delivery—fits naturally with Cableteque’s mission and values. I’m excited by opportunities to contribute in environments that prize domain expertise, user-first tools, and iterative improvement.
+My mindset is centered on practical innovation, continuous learning, and collaborative delivery—fits naturally with Cableteque’s mission and values. I’m excited by opportunities to contribute in environments that prize domain expertise, user-first tools, and iterative improvement.
 
 ---
 
