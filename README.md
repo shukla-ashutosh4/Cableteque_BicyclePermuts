@@ -1,6 +1,6 @@
 # **[Cableteque_BicyclePermutations](https://bicyclepermuts-cableteque.streamlit.app/#bicycle-generator)**
 
-A small toolkit + Streamlit app that reads a compact Excel specification of bicycle modifications (an `ID` sheet plus `GENERAL` and designator sheets), generates every possible bicycle permutation, and exports the result as JSON (and CSV). This repository contains:
+A small toolkit + Streamlit(https://bicyclepermuts-cableteque.streamlit.app/#bicycle-generator) app that reads a compact Excel specification of bicycle modifications (an `ID` sheet plus `GENERAL` and designator sheets), generates every possible bicycle permutation, and exports the result as JSON (and CSV). This repository contains:
 
 * `bicycle_generator.py` — core Python module (function `generate_bicycles_from_excel(xlsx_path) -> str`).
 * `streamlit_bicycle_generator.py` — Streamlit app for uploading `.xlsx`, previewing, filtering and downloading results.
