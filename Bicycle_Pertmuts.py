@@ -133,7 +133,7 @@ preview_rows = st.sidebar.number_input("Preview rows", min_value=5, max_value=10
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Theme colors**")
 primary_color = st.sidebar.color_picker("Primary / accent color", value="#0A84FF")
-background_color = st.sidebar.color_picker("Background color", value="#FFFFFF")
+background_color = st.sidebar.color_picker("Background color", value="#0A0000")
 card_color = st.sidebar.color_picker("Card background color", value="#F8F9FB")
 
 # Inject CSS theme using chosen colors
