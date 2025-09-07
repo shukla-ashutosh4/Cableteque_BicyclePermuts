@@ -192,7 +192,7 @@ if st.sidebar.button("Bicycle.xlsx"):
         a_df_correct.insert(0, 'Color', ['RED', 'CYAN'])
         a_df_correct.to_excel(writer, sheet_name='Color', index=False)
     sample_buffer.seek(0)
-    st.sidebar.download_button(label='Download example .xlsx', data=sample_buffer, file_name='Bicycle_example.xlsx', mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+    st.sidebar.download_button(label='Download example .xlsx', data=sample_buffer, file_name='Bicycle.xlsx', mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
 # Inject a small CSS theme using the chosen colors
 st.markdown(f"""
