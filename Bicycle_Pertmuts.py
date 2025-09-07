@@ -322,4 +322,5 @@ with st.expander("Teach me more — deep dive"):
 """
     )
 
-st.markdown("_If you'd like, I can adapt this app to deploy on Streamlit Cloud or package it into a Docker container. I can also add unit tests and CI integration — tell me which you'd prefer!_")
+# st.markdown("_If you'd like, I can adapt this app to deploy on Streamlit Cloud or package it into a Docker container. I can also add unit tests and CI integration — tell me which you'd prefer!_")
+
