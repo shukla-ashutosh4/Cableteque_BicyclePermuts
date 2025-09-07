@@ -163,36 +163,36 @@ primary_color = st.sidebar.color_picker("Primary / accent color", value="#0A84FF
 background_color = st.sidebar.color_picker("Background color", value="#080000")
 card_color = st.sidebar.color_picker("Card background color", value="#F8F9FB")
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("Need a sample .xlsx that follows the format? Use the button below to download an example.")
+# st.sidebar.markdown("---")
+# st.sidebar.markdown("Need a sample .xlsx that follows the format? Use the button below to download an example.")
 
-# Create a downloadable sample Excel crafted in memory
-if st.sidebar.button("Bicycle.xlsx"):
-    sample_buffer = io.BytesIO()
-    # Build a tiny sample workbook with pandas
-    id_df = pd.DataFrame({
-        'Model number': ['CITY', 'CITY'],
-        'Brakes': ['R', 'D'],
-        'Wheels': ['26', '27'],
-        'Frame size': ['16', '18'],
-        'Groupset': ['Acera', 'Tourney'],
-        'Suspension': ['FALSE', 'TRUE'],
-        'Color': ['RED', 'CYAN']
-    })
-    general_df = pd.DataFrame({
-        'Manufacturer': ['Bikes INC'],
-        'Type': ['City']
-    })
-    a_df = pd.DataFrame({'Color': ['RED', 'CYAN'], 'Frame color': ['RED', 'CYAN'], 'Logo': ['TRUE', 'FALSE']})
-    # write
-    with pd.ExcelWriter(sample_buffer, engine='openpyxl') as writer:
-        id_df.to_excel(writer, sheet_name='ID', index=False)
-        general_df.to_excel(writer, sheet_name='GENERAL', index=False)
-        a_df_correct = a_df.copy()
-        a_df_correct.insert(0, 'Color', ['RED', 'CYAN'])
-        a_df_correct.to_excel(writer, sheet_name='Color', index=False)
-    sample_buffer.seek(0)
-    st.sidebar.download_button(label='Download example .xlsx', data=sample_buffer, file_name='Bicycle.xlsx', mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+# # Create a downloadable sample Excel crafted in memory
+# if st.sidebar.button("Bicycle.xlsx"):
+#     sample_buffer = io.BytesIO()
+#     # Build a tiny sample workbook with pandas
+#     id_df = pd.DataFrame({
+#         'Model number': ['CITY', 'CITY'],
+#         'Brakes': ['R', 'D'],
+#         'Wheels': ['26', '27'],
+#         'Frame size': ['16', '18'],
+#         'Groupset': ['Acera', 'Tourney'],
+#         'Suspension': ['FALSE', 'TRUE'],
+#         'Color': ['RED', 'CYAN']
+#     })
+#     general_df = pd.DataFrame({
+#         'Manufacturer': ['Bikes INC'],
+#         'Type': ['City']
+#     })
+#     a_df = pd.DataFrame({'Color': ['RED', 'CYAN'], 'Frame color': ['RED', 'CYAN'], 'Logo': ['TRUE', 'FALSE']})
+#     # write
+#     with pd.ExcelWriter(sample_buffer, engine='openpyxl') as writer:
+#         id_df.to_excel(writer, sheet_name='ID', index=False)
+#         general_df.to_excel(writer, sheet_name='GENERAL', index=False)
+#         a_df_correct = a_df.copy()
+#         a_df_correct.insert(0, 'Color', ['RED', 'CYAN'])
+#         a_df_correct.to_excel(writer, sheet_name='Color', index=False)
+#     sample_buffer.seek(0)
+#     st.sidebar.download_button(label='Download example .xlsx', data=sample_buffer, file_name='Bicycle.xlsx', mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
 # Inject a small CSS theme using the chosen colors
 st.markdown(f"""
