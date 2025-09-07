@@ -274,8 +274,8 @@ if uploaded_file is not None:
     except Exception as e:
         st.error(f"Error processing file: {e}")
 
-else:
-    st.info("Upload a Bicycle.xlsx file to begin. Use the sample file in the sidebar if you need a template.")
+# else:
+#     st.info("Upload a Bicycle.xlsx file to begin. Use the sample file in the sidebar if you need a template.")
 
 # ---------------------- Footer / teaching ----------------------
 st.markdown("---")
