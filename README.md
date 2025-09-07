@@ -2,9 +2,9 @@
 
 A small toolkit + Streamlit (https://bicyclepermuts-cableteque.streamlit.app) app that reads a compact Excel specification of bicycle modifications (an `ID` sheet plus `GENERAL` and designator sheets), generates every possible bicycle permutation, and exports the result as JSON (and CSV). This repository contains:
 
-* `bicycle_generator.py` — core Python module (function `generate_bicycles_from_excel(xlsx_path) -> str`).
-* `streamlit_bicycle_generator.py` — Streamlit app for uploading `.xlsx`, previewing, filtering and downloading results.
-* `requirements.txt` — environment dependencies.
+* `bicycle_generator.py` - core Python module (function `generate_bicycles_from_excel(xlsx_path) -> str`).
+* `streamlit_bicycle_generator.py` - Streamlit app for uploading `.xlsx`, previewing, filtering and downloading results.
+* `requirements.txt` - environment d ependencies.
 * Example Excel template: `Bicycle_example.xlsx` (downloadable from the app sidebar).
 ## **[Tutorial Video](https://drive.google.com/file/d/1SjSIk8ec_WKvUuggQ60oak9ITbCtlasC/view?usp=sharing)**
 
@@ -12,9 +12,9 @@ A small toolkit + Streamlit (https://bicyclepermuts-cableteque.streamlit.app) ap
 
 * Reads an Excel workbook with the following structure:
 
-  * `ID` sheet — each column is a *designator*; rows are possible values. All combinations are created by taking one value from each column.
-  * `GENERAL` sheet — common fields applied to every bike.
-  * Other sheets — each sheet maps a designator value (first column) to field values (other columns).
+  * `ID` sheet - each column is a *designator*; rows are possible values. All combinations are created by taking one value from each column.
+  * `GENERAL` sheet - common fields applied to every bike.
+  * Other sheets - each sheet maps a designator value (first column) to field values (other columns).
 * Generates the Cartesian product of all designator values and merges per-designator fields into each bike object.
 * Produces a pretty JSON string (list of objects), and also offers a downloadable CSV.
 * Streamlit UI:
@@ -35,7 +35,7 @@ A small toolkit + Streamlit (https://bicyclepermuts-cableteque.streamlit.app) ap
 
 ---
 
-## Quickstart — run locally
+## Quickstart - run locally
 
 1. Create and activate a virtual environment (optional, recommended):
 
