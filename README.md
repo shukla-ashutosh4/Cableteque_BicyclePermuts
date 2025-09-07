@@ -8,9 +8,6 @@ A small toolkit + Streamlit app that reads a compact Excel specification of bicy
 * Example Excel template: `Bicycle_example.xlsx` (downloadable from the app sidebar).
 ##  **[Tutorial Video](https://drive.google.com/file/d/1SjSIk8ec_WKvUuggQ60oak9ITbCtlasC/view?usp=sharing)**
 
-
----
-
 ## Key features
 
 * Reads an Excel workbook with the following structure:
