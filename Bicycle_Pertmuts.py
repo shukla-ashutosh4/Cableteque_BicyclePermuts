@@ -158,7 +158,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Main UI
-st.title("🚲 Bicycle Generator")
+st.title("Bicycle Permutations")
 st.markdown("Upload an Excel file (.xlsx) that matches the `Bicycle.xlsx` structure (ID, GENERAL, other sheets). The app will generate every bike permutation and let you download the JSON/CSV.")
 
 uploaded_file = st.file_uploader("Choose Bicycle .xlsx file", type=["xlsx"])
